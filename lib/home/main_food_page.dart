@@ -19,21 +19,22 @@ class _MainHomePageState extends State<MainHomePage> {
       children: [
         Container(
           child: Container(
-            margin: EdgeInsets.only(top: 45, bottom: 15),
+            margin: EdgeInsets.only(top: 45, bottom: 15, left: 15),
             padding: EdgeInsets.only(top: 20, right: 20),
             child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       BigText(
                         text: 'India',
-                        color: Colors.amber,
+                        color: Colors.deepOrange,
                       ),
                       Row(
                         children: [
                           SmallText(text: 'Mumbai'),
-                          Icon(Icons.arrow_drop_down)
+                          Icon(Icons.arrow_drop_down),
                         ],
                       )
                     ],
